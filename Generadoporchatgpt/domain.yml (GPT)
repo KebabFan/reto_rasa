@@ -1,0 +1,59 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - matricula
+  - becas
+  - anulacion
+  - certificados
+  - horario_clases_manana
+  - horario_clases_tarde
+  - requisitos_acceso
+  - informacion_informatica
+
+responses:
+  utter_greet:
+    - text: "¡Bienvenido! ¿En qué puedo ayudarte?"
+
+  utter_goodbye:
+    - text: "Adiós"
+
+  utter_iamabot:
+    - text: "Soy un bot, impulsado por Rasa."
+
+  utter_follow_up:
+    - text: "¿Te puedo ayudar en algo más? ¿Necesitas ayuda en algo?"
+
+  utter_matricula:
+    - text: "Los plazos de matriculación para el curso 2024-25 se abrirán en julio. La documentación necesaria incluye..."
+
+  utter_becas:
+    - text: "Los plazos para solicitar becas son del 1 al 15 de junio. La documentación necesaria incluye..."
+
+  utter_anulacion:
+    - text: "Puedes renunciar a una convocatoria dentro del plazo establecido, que suele ser..."
+
+  utter_certificados:
+    - text: "Los certificados se pueden recoger en la secretaría del instituto durante el mes de septiembre."
+
+  utter_horario_clases_manana:
+    - text: "El horario de clases por la mañana es de 8:15 a.m. a 14:00 p.m."
+
+  utter_horario_clases_tarde:
+    - text: "El horario de clases por la tarde es de 15:00 p.m. a 20:45 p.m."
+
+  utter_requisitos_acceso:
+    - text: "Para matricularse en un ciclo formativo es necesario aportar la siguiente documentación..."
+
+  utter_informacion_informatica:
+    - text: "En la familia de informática se ofrecen los siguientes estudios: ..."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
