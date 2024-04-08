@@ -1,0 +1,109 @@
+domain.yml:
+intents:
+  - matricula
+  - becas
+  - anulacion
+  - certificados
+  - horario_clases_manana
+  - horario_clases_tarde
+  - requisitos_acceso
+  - informacion_informatica
+
+responses:
+  utter_matricula:
+    - text: "Los plazos de matriculación para el curso 2024-25 se abrirán en julio. La documentación necesaria incluye..."
+  utter_becas:
+    - text: "Los plazos para solicitar becas son del 1 al 15 de junio. La documentación necesaria incluye..."
+  utter_anulacion:
+    - text: "Puedes renunciar a una convocatoria dentro del plazo establecido, que suele ser..."
+  utter_certificados:
+    - text: "Los certificados se pueden recoger en la secretaría del instituto durante el mes de septiembre."
+  utter_horario_clases_manana:
+    - text: "El horario de clases por la mañana es de 8:15 a.m. a 14:00 p.m."
+  utter_horario_clases_tarde:
+    - text: "El horario de clases por la tarde es de 15:00 p.m. a 20:45 p.m."
+  utter_requisitos_acceso:
+    - text: "Para matricularse en un ciclo formativo es necesario aportar la siguiente documentación..."
+  utter_informacion_informatica:
+    - text: "En la familia de informática se ofrecen los siguientes estudios: ..."
+
+
+
+nlu.yml: (Aquí necesitarás agregar ejemplos de frases para cada intento)
+nlu:
+- intent: matricula
+  examples: |
+    - ¿Cuándo comienza la matrícula?
+    - ¿Qué documentos necesito para matricularme?
+- intent: becas
+  examples: |
+    - ¿Cuándo es el plazo para solicitar becas?
+    - ¿Qué papeles necesito para la beca?
+# Continúa con los demás intents...
+
+
+
+
+stories.yml:
+stories:
+- story: matricula
+  steps:
+  - intent: matricula
+  - action: utter_matricula
+- story: becas
+  steps:
+  - intent: becas
+  - action: utter_becas
+# Continúa con los demás stories...
+
+
+
+rules.yml:
+rules:
+- rule: Respond to matricula
+  steps:
+  - intent: matricula
+  - action: utter_matricula
+- rule: Respond to becas
+  steps:
+  - intent: becas
+  - action: utter_becas
+# Continúa con las demás reglas...
+
+
+
+actions.py: (Aquí debes definir las acciones personalizadas que puedas necesitar para tu proyecto)
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+
+class ActionInformacionInformatica(Action):
+
+    def name(self) -> Text:
+        return "action_informacion_informatica"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        dispatcher.utter_message(response="utter_informacion_informatica")
+        return []
+
+
+
+config.yml:
+language: es
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 100
+
+
+
+endpoints.yml: (Aquí puedes configurar los extremos de tu bot, como la base de datos o el servidor de acciones)
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+
+credentials.yml: (Puedes dejarlo vacío si no necesitas credenciales para conectarte a ningún servicio externo)
