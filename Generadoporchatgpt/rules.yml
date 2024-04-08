@@ -1,0 +1,78 @@
+version: "3.1"
+
+rules:
+
+- rule: Responder a preguntas sobre la anulación
+  steps:
+  - intent: anulacion
+  - action: utter_anulacion
+
+- rule: Responder a preguntas sobre los certificados
+  steps:
+  - intent: certificados
+  - action: utter_certificados
+
+- rule: Responder a preguntas sobre el horario de clases
+  steps:
+  - intent: horario_clases_manana
+  - action: utter_horario_clases_manana
+
+- rule: Responder a preguntas sobre las familias profesionales
+  steps:
+  - intent: familias_profesionales
+  - action: utter_familias_profesionales
+
+- rule: Responder a preguntas sobre la matrícula
+  steps:
+  - intent: matricula
+  - action: utter_matricula
+
+- rule: Responder a preguntas adicionales sobre la matrícula
+  condition:
+  - active_loop: informacion_adicional_matricula
+  steps:
+  - intent: informacion_adicional_matricula
+  - action: utter_informacion_adicional_matricula
+
+- rule: Responder a preguntas sobre las becas
+  steps:
+  - intent: becas
+  - action: utter_becas
+
+- rule: Responder a preguntas adicionales sobre las becas
+  condition:
+  - active_loop: informacion_adicional_becas
+  steps:
+  - intent: informacion_adicional_becas
+  - action: utter_informacion_adicional_becas
+
+- rule: Responder a preguntas sobre los requisitos de acceso
+  steps:
+  - intent: requisitos_acceso
+  - action: utter_requisitos_acceso
+
+- rule: Responder a preguntas adicionales sobre los requisitos de acceso
+  condition:
+  - active_loop: informacion_adicional_requisitos
+  steps:
+  - intent: informacion_adicional_requisitos
+  - action: utter_informacion_adicional_requisitos
+
+- rule: Responder a preguntas sobre la oferta de informática
+  steps:
+  - intent: informacion_informatica
+  - action: utter_informacion_informatica
+
+- rule: Proporcionar detalles sobre el ciclo de informática
+  condition:
+  - active_loop: detalles_ciclo_informatica
+  steps:
+  - intent: detalles_ciclo_informatica
+  - action: utter_detalles_ciclo_informatica
+
+- rule: Proporcionar detalles sobre las asignaturas del ciclo de informática
+  condition:
+  - active_loop: asignaturas_ciclo_informatica
+  steps:
+  - intent: asignaturas_ciclo_informatica
+  - action: utter_asignaturas_ciclo_informatica
