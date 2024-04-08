@@ -1,0 +1,56 @@
+version: "3.1"
+
+nlu:
+- intent: anulacion
+  examples: |
+    - Quiero anular una convocatoria
+    - ¿Cómo puedo renunciar a una convocatoria?
+- intent: certificados
+  examples: |
+    - ¿Cuándo puedo recoger los certificados?
+    - ¿Dónde puedo obtener mis certificados?
+- intent: horario_clases_manana
+  examples: |
+    - ¿A qué hora comienzan las clases por la mañana?
+    - ¿Cuál es el horario de clases en la mañana?
+- intent: familias_profesionales
+  examples: |
+    - ¿Cuáles son las familias profesionales disponibles?
+    - ¿Qué opciones de estudios hay en las diferentes familias profesionales?
+- intent: matricula
+  examples: |
+    - ¿Cuándo comienza la matrícula?
+    - ¿Cuáles son los plazos de matrícula?
+    - ¿Qué documentos necesito para matricularme?
+- intent: informacion_adicional_matricula
+  examples: |
+    - ¿Hay algún requisito adicional para matricularme?
+    - ¿Puedo obtener información adicional sobre la matrícula?
+- intent: becas
+  examples: |
+    - ¿Cuándo es el plazo para solicitar becas?
+    - ¿Qué papeles necesito para la beca?
+- intent: informacion_adicional_becas
+  examples: |
+    - ¿Hay algún requisito adicional para solicitar becas?
+    - ¿Puedo obtener más detalles sobre las becas?
+- intent: requisitos_acceso
+  examples: |
+    - ¿Qué requisitos necesito para acceder a los estudios?
+    - ¿Cuál es la documentación necesaria para acceder a un ciclo formativo?
+- intent: informacion_adicional_requisitos
+  examples: |
+    - ¿Hay algo más que necesite saber sobre los requisitos de acceso?
+    - ¿Cuáles son los requisitos adicionales para la admisión?
+- intent: informacion_informatica
+  examples: |
+    - ¿Qué estudios se ofrecen en informática?
+    - ¿Cuáles son los cursos de informática disponibles?
+- intent: detalles_ciclo_informatica
+  examples: |
+    - ¿Puedo obtener más detalles sobre los estudios de informática?
+    - ¿Cuáles son los detalles específicos de los programas de informática?
+- intent: asignaturas_ciclo_informatica
+  examples: |
+    - ¿Qué asignaturas se imparten en el ciclo de informática?
+    - ¿Cuáles son las materias del programa de informática?
