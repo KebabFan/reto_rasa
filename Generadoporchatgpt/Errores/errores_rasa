@@ -1,0 +1,9 @@
+C:\Users\javim\miniconda3\envs\pia2\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: The form 'informacion_adicional_matricula' is used in the 'Responder a preguntas adicionales sobre la matrícula' block, but it is not listed in the domain file. You should add it to your domain file!
+  More info at https://rasa.com/docs/rasa/forms
+C:\Users\javim\miniconda3\envs\pia2\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: The form 'informacion_adicional_becas' is used in the 'Responder a preguntas adicionales sobre las becas' block, but it is not listed in the domain file. You should add it to your domain file!
+  More info at https://rasa.com/docs/rasa/forms
+C:\Users\javim\miniconda3\envs\pia2\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: The form 'informacion_adicional_requisitos' is used in the 'Responder a preguntas adicionales sobre los requisitos de acceso' block, but it is not listed in the domain file. You should add it to your domain file!
+  More info at https://rasa.com/docs/rasa/forms
+C:\Users\javim\miniconda3\envs\pia2\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: The form 'detalles_ciclo_informatica' is used in the 'Proporcionar detalles sobre el ciclo de informática' block, but it is not listed in the domain file. You should add it to your domain file!
+  More info at https://rasa.com/docs/rasa/forms
+C:\Users\javim\miniconda3\envs\pia2\lib\site-packages\rasa\shared\utils\io.py:99: UserWarning: The form 'asignaturas_ciclo_informatica' is used in the 'Proporcionar detalles sobre las asignaturas del ciclo de informática' block, but it is not listed in the domain file. You should add it to your domain file!
