@@ -1,0 +1,59 @@
+
+
+intents:
+- matricula
+- becas
+- anulacion
+- certificados
+- horario_clases_manana
+- familias_profesionales
+- informacion_informatica
+- requisitos_acceso
+- informacion_adicional_matricula
+- informacion_adicional_becas
+- informacion_adicional_requisitos
+- detalles_ciclo_informatica
+- asignaturas_ciclo_informatica
+
+responses:
+  utter_matricula:
+    - text: "Los plazos de matriculación para el curso 2024-25 se abrirán en julio. La documentación necesaria incluye..."
+  utter_becas:
+    - text: "Los plazos para solicitar becas son del 1 al 15 de junio. La documentación necesaria incluye..."
+  utter_anulacion:
+    - text: "Puedes renunciar a una convocatoria dentro del plazo establecido, que suele ser..."
+  utter_certificados:
+    - text: "Los certificados se pueden recoger en la secretaría del instituto durante el mes de septiembre."
+  utter_horario_clases_manana:
+    - text: "El horario de clases por la mañana es de 8:15 a.m. a 14:00 p.m."
+  utter_familias_profesionales:
+    - text: "Aquí están las familias profesionales disponibles..."
+  utter_informacion_informatica:
+    - text: "En la familia de informática se ofrecen los siguientes estudios: ..."
+  utter_requisitos_acceso:
+    - text: "Para matricularse en un ciclo formativo es necesario aportar la siguiente documentación..."
+  utter_informacion_adicional_matricula:
+    - text: "Aquí hay información adicional sobre la matrícula..."
+  utter_informacion_adicional_becas:
+    - text: "Aquí hay información adicional sobre las becas..."
+  utter_informacion_adicional_requisitos:
+    - text: "Aquí hay información adicional sobre los requisitos de acceso..."
+  utter_detalles_ciclo_informatica:
+    - text: "Aquí están los detalles del ciclo de informática..."
+  utter_asignaturas_ciclo_informatica:
+    - text: "Aquí están las asignaturas del ciclo de informática..."
+
+actions:
+- action_anulacion
+- action_certificados
+- action_horario_clases
+- action_familias_profesionales
+- action_matricula
+- action_informacion_adicional_matricula
+- action_becas
+- action_informacion_adicional_becas
+- action_requisitos_acceso
+- action_informacion_adicional_requisitos
+- action_informacion_informatica
+- action_detalles_ciclo_informatica
+- action_asignaturas_ciclo_informatica
