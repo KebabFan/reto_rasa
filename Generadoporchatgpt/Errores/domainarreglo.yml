@@ -1,6 +1,9 @@
 version: "3.1"
 
 intents:
+- greet
+- goodbye
+- inform
 - matricula
 - becas
 - anulacion
@@ -16,6 +19,10 @@ intents:
 - asignaturas_ciclo_informatica
 
 responses:
+  utter_greet:
+    - text: "¡Hola! ¿En qué puedo ayudarte?"
+  utter_goodbye:
+    - text: "¡Adiós! Espero haber sido de ayuda."
   utter_matricula:
     - text: "Los plazos de matriculación para el curso 2024-25 se abrirán en julio. La documentación necesaria incluye..."
   utter_becas:
