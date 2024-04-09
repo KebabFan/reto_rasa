@@ -1,0 +1,53 @@
+version: "3.1"
+
+stories:
+
+- story: Test Anulacion
+  steps:
+  - intent: anulacion
+  - action: utter_anulacion
+
+- story: Test Certificados
+  steps:
+  - intent: certificados
+  - action: utter_certificados
+
+- story: Test Horario Clases
+  steps:
+  - intent: horario_clases_manana
+  - action: utter_horario_clases_manana
+
+- story: Test Familias Profesionales
+  steps:
+  - intent: familias_profesionales
+  - action: utter_familias_profesionales
+
+- story: Test Matricula
+  steps:
+  - intent: matricula
+  - action: utter_matricula
+  - intent: informacion_adicional_matricula
+  - action: utter_informacion_adicional_matricula
+
+- story: Test Becas
+  steps:
+  - intent: becas
+  - action: utter_becas
+  - intent: informacion_adicional_becas
+  - action: utter_informacion_adicional_becas
+
+- story: Test Requisitos de Acceso
+  steps:
+  - intent: requisitos_acceso
+  - action: utter_requisitos_acceso
+  - intent: informacion_adicional_requisitos
+  - action: utter_informacion_adicional_requisitos
+
+- story: Test Oferta Informatica
+  steps:
+  - intent: informacion_informatica
+  - action: utter_informacion_informatica
+  - intent: detalles_ciclo_informatica
+  - action: utter_detalles_ciclo_informatica
+  - intent: asignaturas_ciclo_informatica
+  - action: utter_asignaturas_ciclo_informatica
