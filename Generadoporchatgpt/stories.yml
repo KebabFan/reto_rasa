@@ -2,6 +2,18 @@ version: "3.1"
 
 stories:
 
+- story: Iniciar conversación
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: action_ask_information
+
+- story: Finalizar conversación
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
 - story: Anulacion
   steps:
   - intent: anulacion
