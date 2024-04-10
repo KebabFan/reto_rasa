@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+- rule: Preguntar si el usuario desea continuar después de cada interacción
+  steps:
+  - intent: despedida
+  - action: utter_goodbye
+  - action: action_listen
+
+- rule: Manejar la situación cuando el bot no comprende la entrada del usuario
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope

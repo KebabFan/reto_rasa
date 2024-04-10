@@ -1,0 +1,65 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - buenas
+    - que tal
+    - buenas tardes
+    - buenos dias
+    - buenas noches
+    - saludos
+- intent: inform
+  examples: |
+    - necesito información
+    - quiero saber más
+    - ¿Qué me puedes decir?
+    - ¿Puedes ayudarme con algo?
+    - Dame detalles
+    - ¿Qué sabes?
+    - matricula
+- intent: informacion_matricula
+  examples: |
+    - matrícula
+    - informacion matrícula
+    - plazos de matrícula
+    - documentación matrícula
+- intent: informacion_becas
+  examples: |
+    - becas
+    - informacion becas
+    - plazos becas
+    - documentación becas
+    - quiero informacion de las becas
+- intent: informacion_anulacion
+  examples: |
+    - anulación
+    - renunciar a convocatoria
+    - plazos anulación
+- intent: informacion_certificados
+  examples: |
+    - certificados
+    - recogida certificados
+    - plazos certificados
+- intent: informacion_horario_clases
+  examples: |
+    - horario clases
+    - horario turnos
+    - horario mañana
+    - horario tarde
+- intent: informacion_requisitos_acceso
+  examples: |
+    - requisitos acceso
+    - documentación necesaria
+    - matricularse
+- intent: informacion_familias_profesionales
+  examples: |
+    - familias profesionales
+    - oferta formativa
+    - cursos disponibles
+- intent: informacion_oferta_informatica
+  examples: |
+    - informática
+    - estudios informática
+    - ciclos informática
+    - programación

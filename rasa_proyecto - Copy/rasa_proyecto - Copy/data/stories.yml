@@ -1,0 +1,133 @@
+version: "3.1"
+
+stories:
+- story: Iniciar conversacion
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre la matrícula
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_matricula
+  - action: utter_informacion_matricula
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre las becas
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_becas
+  - action: utter_informacion_becas
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre la anulación de convocatorias
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_anulacion
+  - action: utter_informacion_anulacion
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre la recogida de certificados
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_certificados
+  - action: utter_informacion_certificados
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre el horario de clases
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_horario_clases
+  - action: utter_informacion_horario_clases
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre los requisitos de acceso
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_requisitos_acceso
+  - action: utter_informacion_requisitos_acceso
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre las familias profesionales
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_familias_profesionales
+  - action: utter_informacion_familias_profesionales
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre la oferta de informática
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_oferta_informatica
+  - action: utter_informacion_oferta_informatica
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Usuario no quiere hacer más consultas
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Usuario no comprendido
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: informacion_requisitos_acceso
+  - intent: inform
+  - action: utter_ask_information
+  - action: utter_necesitas
+  - intent: informacion_becas
+  - action: utter_informacion_becas
+  - action: utter_necesitas

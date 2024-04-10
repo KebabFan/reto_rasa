@@ -1,0 +1,58 @@
+version: '3.1'
+intents:
+- despedida
+- greet
+- inform
+- informacion_anulacion
+- informacion_becas
+- informacion_certificados
+- informacion_familias_profesionales
+- informacion_horario_clases
+- informacion_matricula
+- informacion_oferta_informatica
+- informacion_requisitos_acceso
+- out_of_scope
+responses:
+  utter_greet:
+  - text: Bienvenido al asistente de CIPFP Mislata, ¿en qué puedo ayudarte?
+  utter_ask_information:
+  - text: Claro. Las matrículas para el curso 2024-25 se realizan del 1 al 14 de junio. Puedes entregar la documentación en secretaría.
+  utter_necesitas:
+  - text: ¿Necesitas algo más?
+  utter_informacion_becas:
+  - text: El plazo para solicitar becas será del 15 al 30 de junio. Debes presentar tu documentación en la oficina de becas.
+  utter_informacion_anulacion:
+  - text: Puedes renunciar a una convocatoria hasta el 15 de julio. Es importante que sigas el procedimiento establecido para ello.
+  utter_informacion_certificados:
+  - text: Los certificados estarán disponibles para su recogida a partir del 1 de septiembre en la secretaría del centro.
+  utter_informacion_horario_clases:
+  - text: El horario de clases en turno de mañana es de 8:15 a.m. a 14:30 p.m. y en turno de tarde es de 15:00 p.m. a 20:15 p.m.
+  utter_informacion_requisitos_acceso:
+  - text: Para matricularte en un ciclo formativo, necesitas presentar el DNI, título de bachillerato y la solicitud de admisión debidamente cumplimentada.
+  utter_informacion_familias_profesionales:
+  - text: En CIPFP Mislata ofrecemos una amplia variedad de familias profesionales. ¿Te gustaría más información sobre alguna en particular?
+  utter_informacion_oferta_informatica:
+  - text: En la familia de informática ofrecemos los ciclos formativos de Desarrollo de Aplicaciones Web y Desarrollo de Aplicaciones Multiplataforma, ambos en modalidad presencial. ¿Te gustaría más detalles sobre alguno de estos ciclos?
+  utter_out_of_scope:
+  - text: Lo siento, no entendí lo que dijiste. ¿Puedes reformular tu pregunta?
+  utter_informacion_matricula:
+  - text: Los plazos de matriculación para el curso 2024-25 son del 1 al 14 de junio. Puedes entregar la documentación en secretaría.
+  utter_goodbye:
+  - text: ¡Hasta luego! Si necesitas algo más, no dudes en preguntar.
+actions:
+- utter_informacion_becas
+- utter_greet
+- utter_ask_information
+- utter_necesitas
+- utter_informacion_anulacion
+- utter_informacion_certificados
+- utter_informacion_horario_clases
+- utter_informacion_requisitos_acceso
+- utter_informacion_familias_profesionales
+- utter_informacion_oferta_informatica
+- utter_out_of_scope
+- utter_goodbye
+- utter_informacion_matricula
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
