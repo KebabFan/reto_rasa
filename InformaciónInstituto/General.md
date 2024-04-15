@@ -21,10 +21,10 @@ LOS ALUMNOS DEL CENTRO QUE EL PRÓXIMO CURSO QUIERAN ESTUDIAR UN CICLO FORMATIVO
 
 ## BECAS:
 
-Cual es el plazo para solicitar una beca:
-Cuando se tiene que solictitar la beca:
-Como pido una beca:
-Cuando puedo pedir una beca:
+* Cual es el plazo para solicitar una beca:
+* Cuando se tiene que solictitar la beca:
+* Como pido una beca:
+* Cuando puedo pedir una beca:
 El plazo para solicitar la beca de la convocatoria general para el curso 2024/25 es del 19 de marzo de 2024 a las 9 h., hasta el 10 de mayo de 2024 a las 15 h. (horas peninsulares). No lo dejes para el final. Pide tu beca aunque no sepas lo que vas a estudiar o incluso si vas o no a estudiar.
 
 * Que documentos he de aportar para la solicitud de una beca?:
@@ -37,11 +37,11 @@ Los únicos documentos válidos para presentar una solicitud de beca son el DNI 
 
 ## REQUISITOS DE ACCESO
 
-Que requisitos hay para acceder a un Grado Medio?
-Que titulo necesito para el grado medio?
-Que se pide para Grado medio?
-Que tengo que tener para Grado Medio?
-Necesito algo para Grado Medio?:
+* Que requisitos hay para acceder a un Grado Medio?
+* Que titulo necesito para el grado medio?
+* Que se pide para Grado medio?
+* Que tengo que tener para Grado Medio?
+* Necesito algo para Grado Medio?:
 #### DENTRO DEL CUPO DEL 60% PARA ACCESO DIRECTO
 
 - Graduado en Educación Secundaria Obligatoria
@@ -70,11 +70,11 @@ Necesito algo para Grado Medio?:
 - Primer nivel de un programa de cualificación profesional inicial establecido en el Real Decreto 1147/2011, de 29 de julio
 
 
-Que requisitos hay para acceder a grado superior:
-Que titulo necesito para el Grado Superior?
-Que se pide para Grado Superior?
-Que tengo que tener para Grado Superior?
-Necesito algo para Grado Superior?
+* Que requisitos hay para acceder a grado superior:
+* Que titulo necesito para el Grado Superior?
+* Que se pide para Grado Superior?
+* Que tengo que tener para Grado Superior?
+* Necesito algo para Grado Superior?
 #### DENTRO DEL CUPO DEL 60% PARA ACCESO DIRECTO
 
 - Título de Bachiller LOGSE-LOE-LOGSE
