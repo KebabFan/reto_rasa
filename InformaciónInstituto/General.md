@@ -38,7 +38,7 @@ Los únicos documentos válidos para presentar una solicitud de beca son el DNI 
 ## REQUISITOS DE ACCESO
 
 Que requisitos hay para acceder a un Grado Medio:
-# DENTRO DEL CUPO DEL 60% PARA ACCESO DIRECTO
+### DENTRO DEL CUPO DEL 60% PARA ACCESO DIRECTO
 
 - Graduado en Educación Secundaria Obligatoria
 - Haber superado 2º. de BUP de la Ley 14/1970 de 4 de agosto (Máximo dos asignaturas pendientes)
@@ -50,11 +50,11 @@ Que requisitos hay para acceder a un Grado Medio:
 - 5 cursos completos de Humanidades y al menos 2 de Filosofía, de la carrera eclesiástica
 - 2º curso comunes experimental Artes Aplicadas y Oficios Artísticos (Real Decreto 799/1984, de 28 de marzo)
 
-# DENTRO DEL CUPO DEL 20% PARA ACCESO CON FP BÁSICA
+### DENTRO DEL CUPO DEL 20% PARA ACCESO CON FP BÁSICA
 
 - Título Profesional Básico
 
-# DENTRO DEL CUPO DEL 20% PARA PRUEBA DE ACCESO Y OTRAS VÍAS DE ACCESO
+### DENTRO DEL CUPO DEL 20% PARA PRUEBA DE ACCESO Y OTRAS VÍAS DE ACCESO
 
 - Prueba de Acceso a Grado Medio 
 - Prueba de Acceso a Grado Superior en cualquiera de las opciones
