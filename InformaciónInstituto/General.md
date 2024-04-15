@@ -1,3 +1,19 @@
+# INFORMACIÓN PARA INCLUIR AL ASISTENTE CHATBOT: RESPUESTA ÚNICA
+
+## ANULACIÓN
+La anulación de matrícula se realizará el 21 de Abril para el Primer Curso y el 8 de Enero para el Segundo Curso
+
+## CERTIFICADOS
+El Alumnado puede solicitar a través de secretaria, o la pagina del centro, los siguientes certificados: Cerificado de Matrícula, Certificado Académico Oficial Incompleto, Certificado Académico Oficial Completo, Certificado De Becas, Certificado Para Acceso A La Universidad, Certificado De Pruebas De Acceso.
+
+## HORARIO DE CLASES
+El horario de mañanas es de 8am a 2pm, mientras que de tardes es de 3pm a 9pm
+
+## FAMILIAS PROFESIONALES
+Las familias profesionales en el centro son: Administración, Comercio y Marketing, Informática, Óptica, Sanidad, Turismo.
+
+
+
 # INFORMACIÓN PARA INCLUIR AL ASISTENTE CHATBOT: RESPUESTA AMPLIADA
 
 ## MATRÍCULAS:
