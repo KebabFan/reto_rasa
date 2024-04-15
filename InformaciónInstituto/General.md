@@ -19,7 +19,17 @@ LOS ALUMNOS DEL CENTRO QUE EL PRÓXIMO CURSO QUIERAN ESTUDIAR UN CICLO FORMATIVO
 
 
 
-
 ## BECAS:
 
+Cual es el plazo para solicitar una beca:
+Cuando se tiene que solictitar la beca:
+Como pido una beca:
+Cuando puedo pedir una beca:
 El plazo para solicitar la beca de la convocatoria general para el curso 2024/25 es del 19 de marzo de 2024 a las 9 h., hasta el 10 de mayo de 2024 a las 15 h. (horas peninsulares). No lo dejes para el final. Pide tu beca aunque no sepas lo que vas a estudiar o incluso si vas o no a estudiar.
+
+Que documentos he de aportar para la solicitud de una beca:
+Que necesito para tener una beca:
+Que necesito para conseguir una beca:
+Como se consigue una beca:
+Los únicos documentos válidos para presentar una solicitud de beca son el DNI y el NIE en vigor con su correspondiente número de soporte (IDESP o IXESP) y Certificado de Residente Comunitario.
+
