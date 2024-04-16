@@ -18,48 +18,99 @@ nlu:
     - Dame detalles
     - ¿Qué sabes?
     - matricula
-- intent: informacion_matricula
-  examples: |
-    - matrícula
-    - informacion matrícula
-    - plazos de matrícula
-    - documentación matrícula
-- intent: informacion_becas
-  examples: |
-    - becas
-    - informacion becas
-    - plazos becas
-    - documentación becas
-    - quiero informacion de las becas
 - intent: informacion_anulacion
   examples: |
     - anulación
     - renunciar a convocatoria
     - plazos anulación
+    - anular matricula
+    - quitar matricula
 - intent: informacion_certificados
   examples: |
     - certificados
     - recogida certificados
     - plazos certificados
+    - cuando se puede recoger el certificado
+    - Quiero información acerca de los certificados
 - intent: informacion_horario_clases
   examples: |
     - horario clases
     - horario turnos
     - horario mañana
     - horario tarde
-- intent: informacion_requisitos_acceso
-  examples: |
-    - requisitos acceso
-    - documentación necesaria
-    - matricularse
+    - cuales son los horarios de clase
+    - a que hora empiezan las clases
+    - cuando hay clase
 - intent: informacion_familias_profesionales
   examples: |
     - familias profesionales
     - oferta formativa
     - cursos disponibles
+    - que cursos se pueden realizar
+    - que se puede estudir
+    - estudios en el centro
+- intent: informacion_matricula
+  examples: |
+    - matrícula
+    - informacion matrícula
+    - plazos de matrícula
+- intent: informacion_matricula_documentos
+  examples: |
+    - que documentos necesito para la matricula
+    - solicitud matricula
+    - documentación matrícula
+- intent: informacion_becas
+  examples: |
+    - becas
+    - informacion becas
+    - plazos becas
+- intent: informacion_becas_documentos:
+  examples: |
+    - documentos para becas
+    - que documentos necesito para las becas
+    - documentos a entregar para becas
+    - documentación becas
+    - quiero informacion de las becas
+- intent: informacion_requisitos_acceso_gs
+  examples: |
+    - requisitos acceso grado superior
+    - documentación necesaria para el grado superior
+    - matricularse en el grado superior
+    - que estudios necesito para el grado superior
+    - que necesito para cursar el grado superior
+- intent: informacion_requisitos_acceso_gm
+  examples: |
+    - requisitos acceso grado medio
+    - documentación necesaria para el grado medio
+    - matricularse en el grado medio
+    - que estudios necesito para el grado medio
+    - que necesito para cursar el grado medio
 - intent: informacion_oferta_informatica
   examples: |
     - informática
     - estudios informática
     - ciclos informática
     - programación
+    - quiero estudiar informatica
+    - sobre la informatica
+    - que teneis de informatica
+- intent: informacion_oferta_informatica_modulos
+  examples: |
+    - que tienes de daw
+    - que tienes de dam
+    - que tienes de Asir
+    - Administracion de sistemas y redes
+    - Desarrollo de aplicaciones web
+    - Desarrollo de aplicaciones multiplataforma
+    - Que turnos hay de los ciclos que ofreces
+    - turnos de los diferrentess cursos
+    - que modulos hay en esos cursos
+- intent: despedida
+  examples: |
+    - ya no necesito nada mas
+    - muchas gracias por todo
+    - hasta luego
+    - adios
+    - termine
+    - finalizado
+    - he acabado
