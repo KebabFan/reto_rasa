@@ -1,16 +1,20 @@
 version: '3.1'
 intents:
-- despedida
 - greet
 - inform
 - informacion_anulacion
-- informacion_becas
 - informacion_certificados
-- informacion_familias_profesionales
 - informacion_horario_clases
+- informacion_familias_profesionales
 - informacion_matricula
+- informacion_matricula_documentos
+- informacion_becas
+- informacion_becas_documentos
+- informacion_requisitos_acceso_gs
+- informacion_requisitos_acceso_gm
 - informacion_oferta_informatica
-- informacion_requisitos_acceso
+- informacion_oferta_informatica_modulos
+- despedida
 - out_of_scope
 responses:
   utter_greet:
