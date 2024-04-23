@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot con Rasa</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chat-container {
+            max-width: 400px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-display {
+            height: 300px;
+            overflow-y: scroll;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        #user-input {
+            display: flex;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+
+        #user-message {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        /* Estilos adicionales para los mensajes */
+        .message-container {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            color: #0084ff;
+        }
+
+        .bot-message {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div id="chat-container">
+    <div id="chat-display"></div>
+    <div id="user-input">
+        <input type="text" id="user-message" placeholder="Escribe tu mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+<script>
+    function sendMessage() {
+        var userMessage = document.getElementById('user-message').value;
+        var chatDisplay = document.getElementById('chat-display');
+
+        // Mostrar el mensaje del usuario en el chat display
+        chatDisplay.innerHTML += '<div class="message-container user-message"><strong>Tú:</strong> ' + userMessage + '</div>';
+
+        // Enviar mensaje al servidor de Rasa y obtener la respuesta
+        fetch('http://localhost:5005/webhooks/rest/webhook', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({message: userMessage}),
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Mostrar la respuesta de Rasa en el chat display
+                chatDisplay.innerHTML += '<div class="message-container bot-message"><strong>Chatbot:</strong> ' + data[0].text + '</div>';
+                // Hacer scroll hacia abajo para mostrar el último mensaje
+                chatDisplay.scrollTop = chatDisplay.scrollHeight;
+            });
+
+        // Limpiar el input de usuario
+        document.getElementById('user-message').value = '';
+    }
+</script>
+</body>
+</html>

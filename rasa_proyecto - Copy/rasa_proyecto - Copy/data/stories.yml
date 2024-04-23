@@ -11,30 +11,6 @@ stories:
   - intent: despedida
   - action: utter_goodbye
 
-- story: Consultar sobre la matrícula
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform
-  - action: utter_ask_information
-  - intent: informacion_matricula
-  - action: utter_informacion_matricula
-  - action: utter_necesitas
-  - intent: despedida
-  - action: utter_goodbye
-
-- story: Consultar sobre las becas
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform
-  - action: utter_ask_information
-  - intent: informacion_becas
-  - action: utter_informacion_becas
-  - action: utter_necesitas
-  - intent: despedida
-  - action: utter_goodbye
-
 - story: Consultar sobre la anulación de convocatorias
   steps:
   - intent: greet
@@ -71,18 +47,6 @@ stories:
   - intent: despedida
   - action: utter_goodbye
 
-- story: Consultar sobre los requisitos de acceso
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform
-  - action: utter_ask_information
-  - intent: informacion_requisitos_acceso
-  - action: utter_informacion_requisitos_acceso
-  - action: utter_necesitas
-  - intent: despedida
-  - action: utter_goodbye
-
 - story: Consultar sobre las familias profesionales
   steps:
   - intent: greet
@@ -95,39 +59,44 @@ stories:
   - intent: despedida
   - action: utter_goodbye
 
-- story: Consultar sobre la oferta de informática
+- story: Consultar sobre la matrícula
   steps:
   - intent: greet
   - action: utter_greet
   - intent: inform
   - action: utter_ask_information
-  - intent: informacion_oferta_informatica
-  - action: utter_informacion_oferta_informatica
+  - intent: informacion_matricula
+  - action: utter_informacion_matricula
+  - intent: informacion_maytricula_documentos
+  - action: utter_informacion_matricula_documentos
   - action: utter_necesitas
   - intent: despedida
   - action: utter_goodbye
 
-- story: Usuario no quiere hacer más consultas
+- story: Consultar sobre las becas
   steps:
   - intent: greet
   - action: utter_greet
   - intent: inform
   - action: utter_ask_information
-  - intent: despedida
-  - action: utter_goodbye
-
-- story: Usuario no comprendido
-  steps:
-  - intent: out_of_scope
-  - action: utter_out_of_scope
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: informacion_requisitos_acceso
-  - intent: inform
-  - action: utter_ask_information
-  - action: utter_necesitas
   - intent: informacion_becas
   - action: utter_informacion_becas
+  - intent: informacion_becas_documentos
+  - intent: utter_informacion_becas_documentos
   - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye
+
+- story: Consultar sobre los requisitos de acceso
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform
+  - action: utter_ask_information
+  - intent: informacion_requisitos_acceso_gs
+  - action: utter_informacion_requisitos_acceso_gs
+  - intent: informacion_requisitos_acceso_gm
+  - action: utter_informacion_requisitos_acceso_gm
+  - action: utter_necesitas
+  - intent: despedida
+  - action: utter_goodbye

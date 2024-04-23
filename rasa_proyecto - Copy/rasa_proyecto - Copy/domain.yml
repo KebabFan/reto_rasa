@@ -5,13 +5,18 @@ intents:
 - inform
 - informacion_anulacion
 - informacion_becas
+- informacion_becas_documentos
 - informacion_certificados
 - informacion_familias_profesionales
 - informacion_horario_clases
 - informacion_matricula
+- informacion_matricula_documentos
 - informacion_oferta_informatica
-- informacion_requisitos_acceso
+- informacion_oferta_informatica_modulos
+- informacion_requisitos_acceso_gm
+- informacion_requisitos_acceso_gs
 - out_of_scope
+- utter_informacion_becas_documentos
 responses:
   utter_greet:
   - text: Bienvenido al asistente de CIPFP Mislata, ¿en qué puedo ayudarte?
@@ -19,40 +24,49 @@ responses:
   - text: Claro. Las matrículas para el curso 2024-25 se realizan del 1 al 14 de junio. Puedes entregar la documentación en secretaría.
   utter_necesitas:
   - text: ¿Necesitas algo más?
-  utter_informacion_becas:
-  - text: El plazo para solicitar becas será del 15 al 30 de junio. Debes presentar tu documentación en la oficina de becas.
   utter_informacion_anulacion:
-  - text: Puedes renunciar a una convocatoria hasta el 15 de julio. Es importante que sigas el procedimiento establecido para ello.
+  - text: La anulación de matrícula se realizará el 21 de Abril para el Primer Curso y el 8 de Enero para el Segundo Curso.
   utter_informacion_certificados:
-  - text: Los certificados estarán disponibles para su recogida a partir del 1 de septiembre en la secretaría del centro.
+  - text: Los siguientes certificados estarán disponibles para su recogida a partir del 1 de septiembre en la secretaría del centro; Cerificado de Matrícula, Certificado Académico Oficial Incompleto, Certificado Académico Oficial Completo, Certificado De Becas, Certificado Para Acceso A La Universidad, Certificado De Pruebas De Acceso
   utter_informacion_horario_clases:
   - text: El horario de clases en turno de mañana es de 8:15 a.m. a 14:30 p.m. y en turno de tarde es de 15:00 p.m. a 20:15 p.m.
-  utter_informacion_requisitos_acceso:
-  - text: Para matricularte en un ciclo formativo, necesitas presentar el DNI, título de bachillerato y la solicitud de admisión debidamente cumplimentada.
   utter_informacion_familias_profesionales:
-  - text: En CIPFP Mislata ofrecemos una amplia variedad de familias profesionales. ¿Te gustaría más información sobre alguna en particular?
-  utter_informacion_oferta_informatica:
-  - text: En la familia de informática ofrecemos los ciclos formativos de Desarrollo de Aplicaciones Web y Desarrollo de Aplicaciones Multiplataforma, ambos en modalidad presencial. ¿Te gustaría más detalles sobre alguno de estos ciclos?
-  utter_out_of_scope:
-  - text: Lo siento, no entendí lo que dijiste. ¿Puedes reformular tu pregunta?
+  - text: En CIPFP Mislata ofrecemos una amplia variedad de familias profesionales, entre las cuales se encuentras; Administración, Comercio y Marketing, Informática, Óptica, Sanidad, Turismo.
   utter_informacion_matricula:
   - text: Los plazos de matriculación para el curso 2024-25 son del 1 al 14 de junio. Puedes entregar la documentación en secretaría.
+  utter_informacion_matricula_documentos:
+  - text: Los documentos necesarios para la realización de la matricula son; Formulario de Matricula y el Justificante de transferencia o ingreso que se solicita. Para más información consulta el siguiente enlace; https://www.fpmislata.com/wordpress/secretaria/pruebas/matricula/
+  utter_informacion_becas:
+  - text: El plazo para solicitar becas será del 15 al 30 de junio. Debes presentar tu documentación en la oficina de becas.
+  utter_informacion_becas_documentos:
+  - text: Los únicos documentos válidos para presentar una solicitud de beca son el DNI y el NIE en vigor con su correspondiente número de soporte (IDESP o IXESP) y Certificado de Residente Comunitario.
+  utter_informacion_requisitos_acceso_gs:
+  - text: Para matricularte en un ciclo formativo de grado medio necesitas presentar los siguientes documentos; DNI, Solucitud de Admisión debidamente cumplimentada y título academico que permita el acceso(Titulo de Bachillerato, FP Grado Medio, Titulación Universitaria.
+  utter_informacion_requisitos_acceso_gm:
+  - text: Para matricularte en un ciclo formativo de grado medio necesitas presentar los siguientes documentos; DNI, Solucitud de Admisión debidamente cumplimentada y título academico que permita el acceso (Graduado de ESO, FP Primer Grado, FP Grado Medio, Titulaciones equivalentes a efectos académicos.
+  utter_informacion_oferta_informatica:
+  - text: En la familia de informática ofrecemos varios ciclos relacionados con distintas areas de la informatica, tanto de modalidad presencial como semipresencial. ¿Te gustaría más detalles sobre alguno de estos ciclos?
+  utter_out_of_scope:
+  - text: Lo siento, no entendí lo que dijiste. ¿Puedes reformular tu pregunta?
   utter_goodbye:
   - text: ¡Hasta luego! Si necesitas algo más, no dudes en preguntar.
 actions:
-- utter_informacion_becas
 - utter_greet
-- utter_ask_information
-- utter_necesitas
-- utter_informacion_anulacion
-- utter_informacion_certificados
 - utter_informacion_horario_clases
-- utter_informacion_requisitos_acceso
+- utter_informacion_certificados
+- utter_necesitas
+- utter_goodbye
+- utter_ask_information
 - utter_informacion_familias_profesionales
+- utter_informacion_matricula_documentos
+- utter_informacion_anulacion
+- utter_informacion_becas_documentos
+- utter_informacion_becas
+- utter_informacion_matricula
+- utter_informacion_requisitos_acceso_gs
+- utter_informacion_requisitos_acceso_gm
 - utter_informacion_oferta_informatica
 - utter_out_of_scope
-- utter_goodbye
-- utter_informacion_matricula
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
